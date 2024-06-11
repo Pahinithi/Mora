@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Locations within the University</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            width: 80%;
+            max-width: 1000px;
+        }
+        .grid-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+        .grid-item a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>University Locations</h1>
+    <div class="grid-container">
+        <div class="grid-item"><a href="faculty.html">Faculty</a></div>
+        <div class="grid-item"><a href="canteen.html">Canteen</a></div>
+        <div class="grid-item"><a href="hostel.html">Hostel</a></div>
+        <div class="grid-item">Library</div>
+        <div class="grid-item">Study Area</div>
+        <div class="grid-item">Lagaan</div>
+        <div class="grid-item">Grounds</div>
+        <div class="grid-item">GYM</div>
+        <div class="grid-item">Medical Center</div>
+        <div class="grid-item">Central Court</div>
+        <div class="grid-item">Graduate Studies</div>
+        <div class="grid-item">Offices</div>
+        <div class="grid-item">Halls</div>
+        <div class="grid-item">Parkings</div>
+        <div class="grid-item">Labs</div>
+        <div class="grid-item">ATM</div>
+    </div>
+
+    <!-- Bootstrap JavaScript (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

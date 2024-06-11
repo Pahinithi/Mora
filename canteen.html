@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom styles here */
+        body {
+            background-color: #f4f4f4;
+            background-image: url('your-background-image.jpg'); /* Replace 'your-background-image.jpg' with your actual image file */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            padding: 50px 0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .btn-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn-canteen {
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            font-size: 18px;
+            color: #333;
+            cursor: pointer;
+            outline: none;
+            overflow: hidden;
+            position: relative;
+        }
+        .btn-canteen::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: #007bff;
+            transition: left 0.3s;
+            z-index: -1;
+        }
+        .btn-canteen:hover::before {
+            left: 0;
+        }
+        .btn-canteen a {
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Select a Canteen</h1>
+        <div class="btn-grid">
+            <div class="btn-canteen"><a href="civil_canteen.html">Civil Canteen</a></div>
+            <div class="btn-canteen"><a href="l_canteen.html">L Canteen</a></div>
+            <div class="btn-canteen"><a href="goda_canteen.html">Goda Canteen</a></div>
+            <div class="btn-canteen"><a href="staff_canteen.html">Staff Canteen</a></div>
+            <div class="btn-canteen"><a href="gula_canteen.html">Gula Canteen</a></div>
+            <div class="btn-canteen"><a href="wala_canteen.html">Wala Canteen</a></div>
+            <!-- Add more buttons for other canteens -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
